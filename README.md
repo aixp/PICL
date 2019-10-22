@@ -11,5 +11,6 @@ Features:
 
 Subsystems:
 * [Pic](Pic): compiler
+* [Pobx](Pobx): examples
 
 Alexander V. Shiryaev, 2019

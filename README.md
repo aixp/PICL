@@ -1,2 +1,2 @@
 # PICL
-PICL →PIC16 compiler
+PICL → PIC16 compiler

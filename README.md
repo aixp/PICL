@@ -6,8 +6,8 @@ Features:
 * memory banks switching implemented
 * bit access indices may be named numeric constants
 * SLEEP, CLRWDT and RESET commands added
-* "*" operator added (addition with carry)
-* "/" operator added (substraction with borrow)
+* "*" operator added for integer operands (addition with carry)
+* "/" operator added for integer operands (substraction with borrow)
 
 Subsystems:
 * [Pic](Pic): compiler

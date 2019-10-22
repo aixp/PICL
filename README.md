@@ -2,12 +2,13 @@ PICL → PIC16 compiler ([BlackBox](http://www.oberon.ch/blackbox.html) subsys
 
 Only PIC16F177{3,6,8} is currently supported and tested
 
-Features:
-* memory banks switching implemented
+Main differences from original language and compiler:
 * bit access indices may be named numeric constants
+* interrupt handler procedures added
 * SLEEP, CLRWDT and RESET commands added
 * "*" operator added for integer operands (addition with carry)
 * "/" operator added for integer operands (substraction with borrow)
+* memory banks switching implemented
 
 Subsystems:
 * [Pic](Pic): compiler

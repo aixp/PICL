@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Alexander Shiryaev, 2019.05
+# Alexander Shiryaev, 2019.05, 2022.09
 #
 
 import sys
@@ -36,7 +36,7 @@ def load (fileName):
 				k, v = getKV(l)
 				k0 = k.replace('_', '')
 				bank = v // 128
-				if vOld != None:
+				if vOld is not None:
 					assert vOld <= v
 				vOld = v
 				if bank != cmtBank:
@@ -71,7 +71,7 @@ def load (fileName):
 					for sfr, q in sfrs.items():
 						if q[0] == cmtSfr:
 							bits = q[2]
-				assert bits != None
+				assert bits is not None
 				assert k0 not in bits
 				q = [ k, v ]
 				if k0 in allBits:
@@ -167,7 +167,7 @@ def formatBank (bank, sfrs):
 			else:
 				# s = "(* " + s + " *)"
 				s = None
-			if s != None:
+			if s is not None:
 				r.append('		' + s)
 	return r
 
